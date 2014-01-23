@@ -1,0 +1,150 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* Basic Styles header */
+#header{
+	width: 100%;
+	height: 160px;
+	text-align: center;
+
+}
+#logo{
+	width: 16%;
+	height: 160px;
+	
+	border: 1px solid fuchsia;
+}
+
+nav{
+	width: 82%;
+	font-size: 12pt;
+	margin-top: -135px; 
+	border-bottom: 2px solid #e4c246;
+	margin-left: 16%; 
+	margin-right: 2%;
+	height: 70px;
+	
+	border: 1px dotted black;
+	
+}
+nav ul{
+	position: relative;
+	width: 620px;
+	float: right;
+	border: 1px solid black;
+}
+nav li{
+	/*display: inline;*/
+	float: left;
+	/*border: 1px solid red;*/
+	
+}
+
+nav a{
+	color: #565654;
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+	text-decoration: none;
+	margin-top: 15%;
+	font-family: 'PT Sans', Arial, sans-serif;
+	
+	/*border: 1px dashed aqua;*/
+}
+  
+
+nav a:hover, nav a:active {  
+    color: #e4c246;  
+}  
+img{
+	border: black;
+	height: 70%;
+	margin-top: 30px;
+}
+body{
+	background-color:#ffffff;
+}
+
+
+
+
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+
+@media only screen and (max-width : 700px) {
+	nav a{
+	width: 120px; 
+	}
+	nav{
+		
+	}
+	nav a{
+		width: 115px;
+	}
+	nav ul{
+		width: 590px; 
+	}
+}
+
+@media only screen and (max-width : 660px) {
+	#header{
+		height: 310px; 
+	}
+	nav{ 
+		width: 62%;
+		margin-left: 36%;
+		margin-right: 2%;
+		height: 310px;
+		margin-top: -160px;
+	}
+	#logo{
+		width: 36%;
+		height: 160px;
+	}
+	nav ul{
+		width: 53%;
+		margin-top: 50px;
+		display: block;
+		float: none;
+		border: dotted blue;
+	}
+	nav li{
+		/*display: block;
+		float: none;
+		width: 130px;
+		border: double fuchsia;*/
+		width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 100px 0 100px 173.2px;
+border-color: transparent transparent transparent #007bff;
+		
+	}
+	nav a{
+		text-align: left;
+		width: 120px; 
+		border: double green;
+	}
+
+}
+
+
+@media only screen and (max-width : 479px) {
+	nav{ 
+	border-bottom: 2px double #0edb4f;
+}
